@@ -707,10 +707,13 @@ html {
     cursor: pointer;
     min-width: 165px;
     height: 40px;
-    column-gap: 16px;
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     border: none;
     border-radius: 4px;
+    }
+
+    .plane {
+    margin-left: 16px;
     }
 
    /* Modal */
@@ -789,7 +792,7 @@ html {
   }
 
    .modal-field {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
@@ -838,7 +841,7 @@ html {
    }
 
    .comment-field {
-    margin-bottom: 16px:
+    margin-bottom: 16px;
    }
 
    .comment {
@@ -919,10 +922,11 @@ html {
     border-radius: 2px;
    }
 
-    input:checked ~ .policy-blue {
+    .checkbox:checked ~ .policy-blue {
     background-color: var(--color-ocean);
     border: none;
     fill: var(--color-cloud);
+    background-size: contain;
    }
 
    .policy-link {
@@ -945,7 +949,6 @@ html {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
     cursor: pointer;
     background-color: #4D5AE5;
     border: none;
