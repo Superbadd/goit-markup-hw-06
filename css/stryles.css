@@ -811,7 +811,7 @@ html {
     border-radius: 4px;
    }
 
-   .modal-field label {
+   .modal-field, .comment-field label {
     line-height: 1.17;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
@@ -825,6 +825,7 @@ html {
 
    .modal-input:focus {
     border-color: #4D5AE5;
+    background-color: transparent;
    }
 
    .modal-icon {
@@ -871,11 +872,9 @@ html {
     border-color: #4D5AE5;
     }
 
-   /* .policy {
-    display: flex;
-    align-items: center;
+   .policy {
     margin-bottom: 24px;
-   } */
+   }
 
    .policy-blue {
     display: flex;
