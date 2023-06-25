@@ -818,7 +818,6 @@ html {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--mediocre-color);
     border-radius: 4px;
-    background-color: transparent;
    }
 
    .comment-field label {
@@ -855,14 +854,6 @@ html {
     margin-bottom: 16px;
    }
 
-   /* .comment {
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    margin-bottom: 4px;
-    color: var(--mediocre-color);
-    font-size: 12px;
-   } */
-
    .textarea {
     width: 100%;
     height: 120px;
@@ -898,7 +889,6 @@ html {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;
    }
 
    .policy-text {
@@ -919,6 +909,7 @@ html {
 
    .policy-link {
     color: var(--secondary-color);
+    fill: transparent;
    }
 
    .modal-button {
