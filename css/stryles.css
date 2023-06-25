@@ -661,6 +661,7 @@ html {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: var(--title-color);
+    background-color: transparent;
    }
 
    .third-block input::placeholder {
@@ -792,11 +793,19 @@ html {
   }
 
    .modal-field {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
     width: 100%;
+   }
+
+   .modal-field label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--mediocre-color);
+    display: block;
+    margin-bottom: 4px;
    }
 
    .modal-field input {
@@ -809,14 +818,16 @@ html {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--mediocre-color);
     border-radius: 4px;
+    background-color: transparent;
    }
 
-   .modal-field, .comment-field label {
+   .comment-field label {
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    margin-bottom: 4px;
     color: var(--mediocre-color);
-    font-size: 12px;
+    display: block;
+    margin-bottom: 4px;
    }
 
    .field {
@@ -844,13 +855,13 @@ html {
     margin-bottom: 16px;
    }
 
-   .comment {
+   /* .comment {
     line-height: 1.17;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
     color: var(--mediocre-color);
     font-size: 12px;
-   }
+   } */
 
    .textarea {
     width: 100%;
@@ -877,9 +888,6 @@ html {
    }
 
    .policy-blue {
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
     color: #404bbf;
     width: 16px;
     height: 16px;
@@ -902,28 +910,7 @@ html {
     color: var(--mediocre-color);
    }
 
-   .checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-   }
-
-    .checkbox:checked + .check {
-    background-color: var(--color-ocean);
-    border-color: #404bbf;
-    background-size: contain;
-    background-origin: border-box;
-    border-radius: 2px;
-   }
-
-    .checkbox:checked ~ .policy-blue {
+    input:checked + label>span {
     background-color: var(--color-ocean);
     border: none;
     fill: var(--color-cloud);
@@ -940,7 +927,6 @@ html {
     height: 56px;
     font-family: "Roboto", sans-serif;
     margin-left: 95px;
-    margin-top: 24px;
     padding: 16px 64px;
     border-radius: 4px;
     background: var(--secondary-color);
