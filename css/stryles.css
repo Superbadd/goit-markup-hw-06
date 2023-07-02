@@ -813,15 +813,11 @@ html {
     height: 40px;
     padding: 8px 34px;
     padding-left: 38px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-color: var(--mediocre-color);
-    border-radius: 4px;
-   }
-
-   .modal-input {
-    border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
+    border-radius: 4px;
    }
 
    .comment-field label {
@@ -839,7 +835,6 @@ html {
 
    .modal-input:focus {
     border-color: #4D5AE5;
-    background-color: transparent;
    }
 
    .modal-icon {
@@ -886,10 +881,9 @@ html {
     color: #404bbf;
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: underline;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -897,7 +891,6 @@ html {
    }
 
    .policy-text {
-    margin-left: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -909,6 +902,10 @@ html {
     background-color: var(--color-ocean);
     border: none;
     fill: var(--color-cloud);
+   }
+
+   .check {
+    fill: transparent;
    }
 
    .policy-link {
